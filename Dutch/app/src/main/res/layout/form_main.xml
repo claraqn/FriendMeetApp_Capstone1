@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="가게 이름을 입력하세요"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:id="@+id/nameEdt">
+        </EditText>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="결제자이름을 입력하세요"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:id="@+id/payerEdt">
+
+        </EditText>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="총금액을 입력하세요"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:id="@+id/moneyEdt"
+            android:inputType="number">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="참여자이름을 입력하세요\n결제자제외하고 입력"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:id="@+id/peopleTv">
+
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="입력하기"
+            android:id="@+id/btnInput">
+
+        </Button>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="결과보기"
+                android:textSize="30dp"
+                android:id="@+id/finalBtn">
+
+            </Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
